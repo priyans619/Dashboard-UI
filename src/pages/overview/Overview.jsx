@@ -28,11 +28,11 @@ const Overview = () => {
       </div>
       <div className="flex flex-wrap gap-16 justify-center lg:justify-start mt-8">
         
-        <div className="w-full sm:w-[432px] h-auto sm:h-[330px] ">
+        <div className="w-full sm:w-[432px] h-auto sm:h-[330px] rounded-lg overflow-hidden shadow-md flex-shrink-0">
           <img src="src/assets/Revenue.png" alt="Image 1" className="w-full h-full object-cover" />
         </div>
         
-        <div className="w-full sm:w-[432px] h-auto sm:h-[330px] ">
+        <div className="w-full sm:w-[432px] h-auto sm:h-[330px] rounded-lg overflow-hidden shadow-md flex-shrink-0">
           <img src="src/assets/Transactions.png" alt="Image 2" className="w-full h-full object-cover" />
         </div>
       </div>
