@@ -9,7 +9,7 @@ const LeftSidebar = () => {
   };
 
   return (
-    <aside className="w-1/6 bg-blue-500 text-white p-4">
+    <aside className="w-1/6 bg-gray-500 text-white p-4">
       <h1 className="text-2xl mb-4">PAGE</h1>
       <nav>
         <ul>
@@ -18,7 +18,7 @@ const LeftSidebar = () => {
               <button onClick={toggleOverview} className="focus:outline-none">
                 {isOverviewOpen ? '<' : '>'}
               </button>
-              <Link to="/" className="ml-2">Overview</Link>
+              <Link to="/Overview" className="ml-2">Overview</Link>
             </div>
             {isOverviewOpen && (
               <ul className="ml-4 mt-2">
