@@ -26,7 +26,16 @@ const Overview = () => {
           <p className="text-gray-600">Content 4</p>
         </div>
       </div>
-      
+      <div className="flex flex-wrap gap-16 justify-center lg:justify-start mt-8">
+        
+        <div className="w-full sm:w-[432px] h-auto sm:h-[330px] ">
+          <img src="src/assets/Revenue.png" alt="Image 1" className="w-full h-full object-cover" />
+        </div>
+        
+        <div className="w-full sm:w-[432px] h-auto sm:h-[330px] ">
+          <img src="src/assets/Transactions.png" alt="Image 2" className="w-full h-full object-cover" />
+        </div>
+      </div>
 
     </div>
   );
