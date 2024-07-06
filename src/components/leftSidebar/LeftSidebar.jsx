@@ -30,6 +30,12 @@ const LeftSidebar = () => {
         )}
       </div>
 
+      {/* Mobile Sidebar */}
+      <div className={`absolute top-0 h-screen z-0 w-full bg-gray-500 backdrop-blur-lg p-6 md:hidden smooth-transition ${mobileMenuOpen ? 'left-0' : '-left-full'}`}>
+        <Section1 />
+        <Section2 />
+        <Section3 />
+      </div>
     </>
   );
 };
