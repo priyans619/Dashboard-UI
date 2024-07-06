@@ -22,7 +22,7 @@ const LeftSidebar = () => {
       </div>
 
       {/* Hamburger Menu Button */}
-      <div className="absolute md:hidden block top-6 right-3 z-10">
+      <div className="absolute md:hidden block top-6 left-3 z-10">
         {mobileMenuOpen ? (
           <RiCloseLine className="w-6 h-6 text-white mr-2" onClick={() => setMobileMenuOpen(false)} />
         ) : (
