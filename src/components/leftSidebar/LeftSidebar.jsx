@@ -32,6 +32,10 @@ const LeftSidebar = () => {
 
       {/* Mobile Sidebar */}
       <div className={`absolute top-0 h-screen z-0 w-full bg-gray-500 backdrop-blur-lg p-6 md:hidden smooth-transition ${mobileMenuOpen ? 'left-0' : '-left-full'}`}>
+        <div className="flex items-center mb-6">
+          <img src="src/assets/logo.png" alt="logo" className="w-6" />
+          <h1 className="ml-2 text-black font-normal text-sm ">Superstars AI</h1>
+        </div>
         <Section1 />
         <Section2 />
         <Section3 />
