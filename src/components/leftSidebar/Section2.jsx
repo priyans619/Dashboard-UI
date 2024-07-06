@@ -2,9 +2,19 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Section2 = () => {
-  ;
+  const [openSections, setOpenSections] = useState({
+    overview: false,
+    transactions: false,
+    invoices: false,
+    customers: false,
+    productCatalogs: false,
+    reports: false,
+    checkout: false,
+    businessAccount: false,
+    developerTools: false
+  });
 
-const toggleSection = (section) => {
+  const toggleSection = (section) => {
     setOpenSections({
       ...openSections,
       [section]: !openSections[section]
