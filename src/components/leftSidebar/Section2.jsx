@@ -33,7 +33,11 @@ const Section2 = () => {
               </button>
               <Link to="/overview" className="ml-2 text-sm">Overview</Link>
             </div>
-            
+            {openSections.overview && (
+              <ul className="text-sm ml-4 mt-2">
+                <li className="mb-2"><Link to="/overview/page1">Page 1</Link></li>
+              </ul>
+            )}
           </li>
         </ul>
       </nav>
