@@ -35,7 +35,21 @@ const Section2 = () => {
             </div>
             {openSections.overview && (
               <ul className="text-sm ml-4 mt-2">
-                <li className="mb-2"><Link to="/overview/page1">Page 1</Link></li>
+                
+              </ul>
+            )}
+          </li>
+          
+          <li className="mb-2">
+            <div className="flex items-center">
+              <button onClick={() => toggleSection('transactions')} className="focus:outline-none">
+                {openSections.transactions ? '<' : '>'}
+              </button>
+              <Link to="/transactions" className="ml-2 text-sm">Transactions</Link>
+            </div>
+            {openSections.transactions && (
+              <ul className="text-sm ml-4 mt-2">
+                <li className="text-sm mb-2"><Link to="/transactions/page1">Page</Link></li>
               </ul>
             )}
           </li>
