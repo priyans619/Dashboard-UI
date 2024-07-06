@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { RiCloseLine } from 'react-icons/ri';
+import { HiOutlineMenu } from 'react-icons/hi';
 import Section1 from './Section1';
 import Section2 from './Section2';
 import Section3 from './Section3';
 
 const LeftSidebar = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <>
@@ -17,6 +20,16 @@ const LeftSidebar = () => {
         <Section2 />
         <Section3 />
       </div>
+
+      {/* Hamburger Menu Button */}
+      <div className="absolute md:hidden block top-6 right-3 z-10">
+        {mobileMenuOpen ? (
+          <RiCloseLine className="w-6 h-6 text-white mr-2" onClick={() => setMobileMenuOpen(false)} />
+        ) : (
+          <HiOutlineMenu className="w-6 h-6 text-white mr-2" onClick={() => setMobileMenuOpen(true)} />
+        )}
+      </div>
+
     </>
   );
 };
