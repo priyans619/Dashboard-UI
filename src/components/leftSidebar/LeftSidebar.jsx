@@ -11,7 +11,7 @@ const LeftSidebar = () => {
   return (
     <>
       {/* Desktop Sidebar */}
-      <div className="md:flex hidden flex-col w-[240px] h-screen py-10 px-6 bg-[#F7F9FB]">
+      <div className="md:flex hidden fixed flex-col w-[240px] h-screen py-10 px-6 bg-[#F7F9FB]">
         <div className="flex items-center mb-6">
           <img src="src/assets/logo.png" alt="logo" className="w-6" />
           <h1 className="ml-2 text-black font-normal text-sm ">Superstars AI</h1>
@@ -22,11 +22,11 @@ const LeftSidebar = () => {
       </div>
 
       {/* Hamburger Menu Button */}
-      <div className="absolute md:hidden block top-6 left-3 z-10">
+      <div className="absolute md:hidden block top-6 right-3 z-10">
         {mobileMenuOpen ? (
-          <RiCloseLine className="w-6 h-6 text-white mr-2" onClick={() => setMobileMenuOpen(false)} />
+          <RiCloseLine className="w-6 h-6 text-black mr-2" onClick={() => setMobileMenuOpen(false)} />
         ) : (
-          <HiOutlineMenu className="w-6 h-6 text-white mr-2" onClick={() => setMobileMenuOpen(true)} />
+          <HiOutlineMenu className="w-6 h-6 text-black mr-2" onClick={() => setMobileMenuOpen(true)} />
         )}
       </div>
 
