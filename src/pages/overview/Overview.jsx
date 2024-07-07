@@ -2,8 +2,8 @@ import React from 'react';
 
 const Overview = () => {
   return (
-    <div className="p-4">
-      <h2 className="text-2xl mb-4">Overview Page</h2>
+    <div className="p-4 h-full bg-[#4993dc]">
+      <h2 className=" flex flex-wrap justify-left text-sm text-left font-semibold mb-4">Today</h2>
       <div className="flex flex-wrap gap-8 justify-center lg:justify-start">
         
         <div className="bg-white p-6 w-52 h-28 rounded-lg shadow-md flex-shrink-0">
@@ -34,6 +34,14 @@ const Overview = () => {
         
         <div className="w-full sm:w-[432px] h-auto sm:h-[330px] rounded-lg overflow-hidden shadow-md flex-shrink-0">
           <img src="src/assets/Transactions.png" alt="Image 2" className="w-full h-full object-cover" />
+        </div>
+
+        <div className="w-full sm:w-[432px] h-auto sm:h-[280px] rounded-lg overflow-hidden shadow-md flex-shrink-0">
+          <img src="src/assets/Transaction1.png" alt="Image 1" className="w-full h-full object-cover" />
+        </div>
+        
+        <div className="w-full sm:w-[432px] h-auto sm:h-[280px] rounded-lg overflow-hidden shadow-md flex-shrink-0">
+          <img src="src/assets/Transaction2.png" alt="Image 2" className="w-full h-full object-cover" />
         </div>
       </div>
 
