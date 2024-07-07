@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
+import { PiRocketLaunch } from "react-icons/pi";
+import { CiDollar } from "react-icons/ci";
 
 const Section2 = () => {
   const [openSections, setOpenSections] = useState({
@@ -28,35 +30,34 @@ const Section2 = () => {
       <nav>
         <ul className=''>
           <li className="mb-2">
-            <div className="flex items-center">
+            <div className="flex items-center bg-gray-200 rounded-md p-1">
               <button onClick={() => toggleSection('overview')} className="focus:outline-none">
                 {openSections.overview ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}
               </button>
+              <PiRocketLaunch className="text-gray-600 text-xl ml-2" />
               <Link to="/overview" className="ml-2 text-sm">Overview</Link>
             </div>
             {openSections.overview && (
               <ul className="text-sm ml-4 mt-2">
-                {/* Add additional links or content here if needed */}
+
               </ul>
             )}
           </li>
-          
+
           <li className="mb-2">
-            <div className="flex items-center">
+            <div className="flex items-center bg-gray-200 rounded-md p-1">
               <button onClick={() => toggleSection('transactions')} className="focus:outline-none">
                 {openSections.transactions ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}
               </button>
+              <CiDollar className="text-gray-600 text-xl ml-2" />
               <Link to="/transactions" className="ml-2 text-sm">Transactions</Link>
             </div>
             {openSections.transactions && (
               <ul className="text-sm ml-4 mt-2">
                 <li className="text-sm mb-2"><Link to="/transactions/page1">Page</Link></li>
-                {/* Add additional links or content here if needed */}
               </ul>
             )}
           </li>
-          
-          {/* Add additional sections as needed */}
         </ul>
       </nav>
     </>
