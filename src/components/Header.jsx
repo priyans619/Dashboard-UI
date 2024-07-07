@@ -1,7 +1,11 @@
 import React from 'react';
-import { PiRocketLaunch, PiSidebar  } from "react-icons/pi";
+import { PiRocketLaunch, PiSidebar } from "react-icons/pi";
 import { AiTwotoneStar } from "react-icons/ai";
+import { CiLight } from "react-icons/ci";
+import { MdHistory } from "react-icons/md";
+import { FiBell } from "react-icons/fi";
 
+import { FiSearch } from 'react-icons/fi';
 
 const Header = () => {
   return (
@@ -17,7 +21,21 @@ const Header = () => {
         </span>
       </div>
 
-      
+      {/* Right side search bar and icons */}
+      <div className="flex items-center space-x-4">
+        <div className="relative">
+          <FiSearch className="absolute left-3 top-2 text-gray-600" />
+          <input
+            type="text"
+            className="text-center pl-10 pr-10 py-2 border bg-gray-200 border-gray-300 rounded-full focus:outline-none focus:border-gray-500"
+            placeholder="Search"
+            style={{ borderRadius: '8px', padding: '4px 8px', }}
+          />
+
+          <img src="src/assets/icon.png" alt="logo" className="absolute right-3 top-2 w-4 h-4" />
+        </div>
+        
+      </div>
     </nav>
   );
 };
