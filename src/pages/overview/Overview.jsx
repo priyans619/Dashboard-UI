@@ -3,7 +3,7 @@ import { HiArrowTrendingDown, HiArrowTrendingUp } from 'react-icons/hi2';
 
 const Overview = () => {
   return (
-    <div className="p-4 h-full bg-[#4993dc]">
+    <div className="p-4 h-full bg-[#F7F9FB]">
       <h2 className=" flex flex-wrap justify-left text-sm text-left py-2 mt-2 font-semibold mb-4">Today</h2>
       <div className="flex flex-wrap gap-8 justify-center lg:justify-start">
 
