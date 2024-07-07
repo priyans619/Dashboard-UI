@@ -34,7 +34,10 @@ const Header = () => {
 
           <img src="src/assets/icon.png" alt="logo" className="absolute right-3 top-2 w-4 h-4" />
         </div>
-        
+        <CiLight className="text-gray-600 text-xl cursor-pointer" />
+        <MdHistory className="text-gray-600 text-xl cursor-pointer" />
+        <FiBell className="text-gray-600 text-xl cursor-pointer" />
+        <PiSidebar className="text-gray-600 text-xl cursor-pointer" />
       </div>
     </nav>
   );
