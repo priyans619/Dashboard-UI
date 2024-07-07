@@ -4,8 +4,10 @@ import Header from './components/Header';
 import LeftSidebar from './components/leftSidebar/LeftSidebar';
 import RightSidebar from './components/RightSidebar';
 import Overview from './pages/overview/Overview';
-import Transactions from './pages/Transactions';
-import Invoices from './pages/Invoices';
+import Transactions from './pages/transactions/Transactions';
+import Invoices from './pages/invoices/Invoices';
+import Customers from './pages/customers/Customers';
+import Started from './pages/started/Started';
 
 function App() {
   return (
@@ -20,6 +22,10 @@ function App() {
               <Route exact path="/overview" element={<Overview />} />
               <Route path="/transactions" element={<Transactions />} />
               <Route path="/invoices" element={<Invoices />} />
+              <Route path="/customers" element={<Customers />} />
+              <Route path="/invoices" element={<Invoices />} />
+              <Route path="/started" element={<Started />} />
+              
             </Routes>
           </div>
         </main>
