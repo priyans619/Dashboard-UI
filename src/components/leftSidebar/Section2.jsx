@@ -99,7 +99,7 @@ const Section2 = () => {
             </div>
             {openSections.transactions && (
               <ul className="text-sm ml-4 mt-2">
-                <li className="text-sm mb-2"><Link to="/transactions/page1">Page</Link></li>
+                {/* <li className="text-sm mb-2"><Link to="/transactions/page1"></Link></li> */}
               </ul>
             )}
           </li>
