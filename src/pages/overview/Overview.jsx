@@ -17,7 +17,36 @@ const Overview = () => {
             </span>
           </div>
         </div>
-        
+        <div className="bg-[#DBE6F2] p-6 w-52 h-28 rounded-2xl flex-shrink-0">
+          <h3 className="text-sm font-semibold mb-2 text-black">Transactions</h3>
+          <div className="flex gap-8 items-center">
+            <span className="text-2xl font-semibold text-black">14K</span>
+            <span className="flex items-center text-black font-normal ml-2">
+              <span className="text-xs mr-1">-0.03%</span>
+              <HiArrowTrendingDown className="text-gray-600" />
+            </span>
+          </div>
+        </div>
+        <div className="bg-[#F9FEF0] p-6 w-52 h-28 rounded-2xl flex-shrink-0">
+          <h3 className="text-sm font-semibold mb-2 text-black">Average Transactions</h3>
+          <div className="flex gap-8 items-center">
+            <span className="text-2xl font-semibold text-black">$2K</span>
+            <span className="flex items-center text-black font-normal ml-2">
+              <span className="text-xs mr-1">+15.03%</span>
+              <HiArrowTrendingUp className="text-gray-600" />
+            </span>
+          </div>
+        </div>
+        <div className="bg-[#DBE6F2] p-6 w-52 h-28 rounded-2xl flex-shrink-0">
+          <h3 className="text-sm font-semibold mb-2 text-black">Refunds</h3>
+          <div className="flex gap-8 items-center">
+            <span className="text-2xl font-semibold text-black">1K</span>
+            <span className="flex items-center text-black font-normal ml-2">
+              <span className="text-xs mr-1">+6.08%</span>
+              <HiArrowTrendingUp className="text-gray-600" />
+            </span>
+          </div>
+        </div>
 
       </div>
 
