@@ -1,5 +1,9 @@
 import React from 'react';
 import { HiArrowTrendingDown, HiArrowTrendingUp } from 'react-icons/hi2';
+import Revenue from '../../assets/Revenue.png';
+import TransactionsImg from '../../assets/Transactions.png';
+import Transaction1Img from '../../assets/Transaction1.png';
+import Transaction2Img from '../../assets/Transaction2.png';
 
 const Overview = () => {
   return (
@@ -52,20 +56,20 @@ const Overview = () => {
 
       <div className="flex flex-wrap gap-16 justify-center lg:justify-start mt-8">
 
-        <div className="w-full sm:w-[432px] h-auto sm:h-[330px] rounded-lg overflow-hidden shadow-md flex-shrink-0">
-          <img src="src/assets/Revenue.png" alt="Image 1" className="w-full h-full object-cover" />
+      <div className="w-full sm:w-[432px] h-auto sm:h-[330px] rounded-lg overflow-hidden shadow-md flex-shrink-0">
+          <img src={Revenue} alt="Revenue" className="w-full h-full object-cover" />
         </div>
 
         <div className="w-full sm:w-[432px] h-auto sm:h-[330px] rounded-lg overflow-hidden shadow-md flex-shrink-0">
-          <img src="src/assets/Transactions.png" alt="Image 2" className="w-full h-full object-cover" />
+          <img src={TransactionsImg} alt="Transactions" className="w-full h-full object-cover" />
         </div>
 
         <div className="w-full sm:w-[432px] h-auto sm:h-[280px] rounded-lg overflow-hidden shadow-md flex-shrink-0">
-          <img src="src/assets/Transaction1.png" alt="Image 1" className="w-full h-full object-cover" />
+          <img src={Transaction1Img} alt="Transaction 1" className="w-full h-full object-cover" />
         </div>
 
         <div className="w-full sm:w-[432px] h-auto sm:h-[280px] rounded-lg overflow-hidden shadow-md flex-shrink-0">
-          <img src="src/assets/Transaction2.png" alt="Image 2" className="w-full h-full object-cover" />
+          <img src={Transaction2Img} alt="Transaction 2" className="w-full h-full object-cover" />
         </div>
       </div>
 
