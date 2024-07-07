@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { IoIosLink } from "react-icons/io";
 import { BsFiletypeDoc } from "react-icons/bs";
+import { FiHeadphones } from "react-icons/fi";
 
 const Section3 = () => {
   return (
@@ -13,6 +14,11 @@ const Section3 = () => {
             <IoIosLink className="text-gray-300 text-xl cursor-pointer" />
             <BsFiletypeDoc className="text-black text-xl ml-1" />
             <Link to="/" className="ml-2">Documentations</Link>
+          </li>
+          <li className="text-sm mb-2 flex items-center">
+            <IoIosLink className="text-gray-300 text-xl cursor-pointer" />
+            <FiHeadphones className="text-black text-xl ml-1" />
+            <Link to="/" className="ml-2">Help Center</Link>
           </li>
         </ul>
       </nav>
