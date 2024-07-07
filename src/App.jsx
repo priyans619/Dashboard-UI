@@ -19,7 +19,8 @@ function App() {
           <Header />
           <div className="">
             <Routes>
-              <Route exact path="/overview" element={<Overview />} />
+              <Route exact path="/started" element={<Started />} />
+              <Route path="/overview" element={<Overview />} />
               <Route path="/transactions" element={<Transactions />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/customers" element={<Customers />} />
