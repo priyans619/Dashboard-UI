@@ -8,7 +8,7 @@ import { FiSearch } from 'react-icons/fi';
 
 const Header = () => {
   return (
-    <nav className="bg-[#F7F9FB] p-4 border-b border-gray-300 flex justify-between items-center">
+    <nav className="bg-[#F7F9FB] p-4 border-b border-gray-300 flex justify-between items-center mx-auto">
       {/* Left side icons */}
       <div className="flex items-center space-x-4">
         <PiRocketLaunch className="text-gray-600 text-xl cursor-pointer" />
@@ -21,7 +21,7 @@ const Header = () => {
       </div>
 
       {/* Right side search bar and icons */}
-      <div className="hidden md:flex items-center space-x-4 ml-2">
+      <div className="hidden md:flex items-center space-x-4 mx-auto">
         <div className="relative">
           <FiSearch className="absolute left-3 top-2 text-gray-600" />
           <input
@@ -32,10 +32,7 @@ const Header = () => {
           />
           <img src="src/assets/icon.png" alt="logo" className="hidden md:block absolute right-3 top-2 w-4 h-4" />
         </div>
-      </div>
-
-      {/* Separate div for each icon */}
-      <div className="flex items-center space-x-4 ml-2 mr-9">
+        <div className="flex items-center space-x-4 ml-2 mr-9">
         <div className="text-gray-600 text-xl cursor-pointer">
           <CiLight />
         </div>
@@ -46,6 +43,10 @@ const Header = () => {
           <FiBell />
         </div>
       </div>
+      </div>
+
+      {/* Separate div for each icon */}
+      
     </nav>
   );
 };
