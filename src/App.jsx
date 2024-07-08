@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import LeftSidebar from './components/leftSidebar/LeftSidebar';
 import RightSidebar from './components/RightSidebar';
@@ -19,14 +19,12 @@ function App() {
           <Header />
           <div className="">
             <Routes>
-              <Route exact path="/started" element={<Started />} />
+              <Route exact path="/" element={<Navigate to="/started" />} />
+              <Route path="/started" element={<Started />} />
               <Route path="/overview" element={<Overview />} />
               <Route path="/transactions" element={<Transactions />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/customers" element={<Customers />} />
-              <Route path="/invoices" element={<Invoices />} />
-              <Route path="/started" element={<Started />} />
-              
             </Routes>
           </div>
         </main>
