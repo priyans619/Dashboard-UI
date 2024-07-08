@@ -4,13 +4,18 @@ import axios from 'axios';
 const Transactions = () => {
   const [transactions, setTransactions] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const transactionsPerPage = 7; // Display 7 transactions per page
+  const transactionsPerPage = 4; 
+  const totalTransactions = 40; 
 
   useEffect(() => {
     const fetchTransactions = async () => {
       try {
-        const response = await axios.get('https://randomuser.me/api/?results=50');
-        setTransactions(response.data.results);
+        const response = await axios.get(`https://randomuser.me/api/?results=${totalTransactions}`);
+        const transactionsWithAmount = response.data.results.map(transaction => ({
+          ...transaction,
+          amount: (Math.random() * 1000).toFixed(2) // Random amount between 0 and 1000
+        }));
+        setTransactions(transactionsWithAmount);
       } catch (error) {
         console.error('Error fetching transactions:', error);
       }
@@ -30,12 +35,15 @@ const Transactions = () => {
       <h2 className="text-2xl mb-4">Transactions</h2>
       <ul>
         {currentTransactions.map((transaction, index) => (
-          <li key={index} className="mb-4">
+          <li key={index} className="mb-4 p-4 border rounded-lg">
             <div>
               <span className="font-semibold">Name:</span> {`${transaction.name.first} ${transaction.name.last}`}
             </div>
             <div>
               <span className="font-semibold">Email:</span> {transaction.email}
+            </div>
+            <div>
+              <span className="font-semibold">Amount:</span> ${transaction.amount}
             </div>
           </li>
         ))}
