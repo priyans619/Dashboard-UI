@@ -12,7 +12,7 @@ const RightSidebar = () => {
   return (
     <>
       {/* Desktop Sidebar */}
-      <div className="hidden lg:flex flex-col w-[240px] h-screen py-10 px-2 border-l border-gray-300 bg-[#F7F9FB]">
+      <div className="hidden lg:flex fixed right-0 flex-col w-[240px] h-screen py-10 px-2 border-l border-gray-300 bg-[#F7F9FB]">
         <h1 className="text-sm font-semibold ml-2">Notifications</h1>
         <div className="flex items-center mb-2">
           <BiBugAlt className="w-8 h-7 text-sm py-1 rounded-lg bg-[#E3F5FF]" />
